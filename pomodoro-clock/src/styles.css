@@ -1,0 +1,151 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #dceefc, #e6f0fa);
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* App Container */
+.clock-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #2d4a6b;
+}
+
+/* Timer Display */
+#timer-label {
+  font-size: 1.25rem;
+  color: #4c6b8b;
+  margin-bottom: 0.5rem;
+}
+
+#time-left {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #2b506e;
+  margin-bottom: 2rem;
+}
+
+/* Length Controls */
+.control-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.control-group {
+  flex: 1;
+  min-width: 180px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.control-group > div:first-child {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #4c6b8b;
+}
+
+.control-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.control-row button {
+  background-color: #cce4f6;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: #1f4a4c;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.control-row button:hover {
+  background-color: #b1d3ef;
+}
+
+.control-row > div {
+  font-size: 1.4rem;
+  min-width: 2rem;
+  text-align: center;
+}
+
+/* Start/Stop and Reset Controls */
+.button-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.button-controls button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+#start-stop {
+  background-color: #b5e0b7;
+  color: #1f4a4c;
+}
+
+#start-stop:hover {
+  background-color: #9ed8a0;
+}
+
+#reset {
+  background-color: #f7dada;
+  color: #6c2c2c;
+}
+
+#reset:hover {
+  background-color: #f1c1c1;
+}
+
+/* Responsive Tweak */
+@media (max-width: 480px) {
+  .control-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .control-group {
+    width: 100%;
+  }
+}
